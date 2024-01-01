@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FriedFrog restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper center">
+      <h1>Welcome to FriedFrog restaurant!</h1>
+      <div class="form-box">
+        <form name="form" class="forma">
+          <label for="get-name">
+            <strong>Enter your name:</strong>
+            <input type="text" size="40" name="get-name" id="get-name" />
+          </label>
+          <fieldset class="menu">
+            <legend class="title">
+              <strong>Choose a dish:</strong>
+            </legend>
+            <label for="margarita" class="checkbox-label">
+              <input
+                type="checkbox"
+                name="margarita"
+                id="margarita"
+                value='"Margarita" pizza'
+              />
+              "Margarita" pizza
+            </label>
+            <label for="pepperoni" class="checkbox-label">
+              <input
+                type="checkbox"
+                name="pepperoni"
+                id="pepperoni"
+                value='"Pepperoni" pizza'
+              />
+              "Pepperoni" pizza
+            </label>
+            <label for="filadelphia" class="checkbox-label">
+              <input
+                type="checkbox"
+                name="philadelphia"
+                id="philadelphia"
+                value='"Philadelphia" sushi'
+              />
+              "Philadelphia" sushi
+            </label>
+            <label for="california" class="checkbox-label">
+              <input
+                type="checkbox"
+                name="california"
+                id="california"
+                value='"California" sushi'
+              />
+              "California" sushi
+            </label>
+            <label for="tiramisu" class="checkbox-label">
+              <input
+                type="checkbox"
+                name="tiramisu"
+                value='"Tiramisu" desert'
+                id="tiramisu"
+              />
+              "Tiramisu" desert
+            </label>
+            <label for="cheesecake" class="checkbox-label">
+              <input
+                type="checkbox"
+                name="cheesecake"
+                id="cheesecake"
+                value='"Cheesecake" desert'
+              />
+              "Cheesecake" desert
+            </label>
+          </fieldset>
+          <div class="btn-box">
+            <button class="button" type="submit" name="make-order">
+              Make an order
+            </button>
+          </div>
+          <p class="title">
+            <strong>YOUR ORDER:</strong>
+          </p>
+          <div class="order-box">
+            <p class="your-order"></p>
+          </div>
+          <br />
+          <p class="title">
+            <strong
+              >NAMES OF THE COOKES, WHO COOKED THE DISHES AS PER YOUR
+              ORDER:</strong
+            >
+          </p>
+          <div class="cook-box">
+            <ul class="cook-name-list"></ul>
+          </div>
+          <div class="btn-box">
+            <button class="button" type="button" name="watch-cook">
+              View a cook
+            </button>
+          </div>
+          <div class="btn-box">
+            <button class="button" type="button" name="clear-order">
+              Clear the form
+            </button>
+          </div>
+          <hr />
+          <br />
+          <p class="title">
+            <strong>VIEW ALL ORDERS:</strong>
+          </p>
+          <div class="orders-box">
+            <ul class="your-orders"></ul>
+          </div>
+          <div class="btn-box">
+            <button class="button" type="button" name="show-all-orders">
+              View orders
+            </button>
+          </div>
+          <div class="btn-box">
+            <button class="button" type="button" name="clear-all-orders">
+              Clear
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
